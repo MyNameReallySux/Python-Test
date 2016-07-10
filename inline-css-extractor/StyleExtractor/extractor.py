@@ -116,7 +116,7 @@ def extract_style(page):
 
         def get_classname(tag):
             increment_tag_count(tag)
-            return '.' + tag.name + str(tag_count[tag.name])
+            return '.' + tag.name + "-" + str(tag_count[tag.name])
 
         def format_style(tag):
             style = tag['style']
